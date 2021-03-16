@@ -89,6 +89,7 @@
 #define D_P (D_HEX_F | VERT_RIGHT_UP)
 #define D_n (D_ZERO & ~HORIZ_DOWN)
 #define D_UNKNOWN 0
+#define CHAR_UNKNOWN '?'
 
 #define NUMBER_OF_DIGITS 6 /* in this special case */
 

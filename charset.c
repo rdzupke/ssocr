@@ -55,7 +55,7 @@ void init_charset(charset_t cs)
   int i;
 
   for(i = 0; i < CHARSET_MAX + 1; i++) {
-    charset_array[i] = '_';
+    charset_array[i] = CHAR_UNKNOWN;
   }
   switch(cs) {
     case CS_FULL:
@@ -156,12 +156,12 @@ void init_charset(charset_t cs)
 int print_digit(int digit, unsigned int flags)
 {
   int unknown_digit = 0;
-  char c = '_';
+  char c = CHAR_UNKNOWN;
 
   if(digit <= CHARSET_MAX) {
     c = charset_array[digit];
   }
-  if(c == '_') {
+  if(c == CHAR_UNKNOWN) {
     unknown_digit = 1;
   }
   if(!((c == '.') && (flags & OMIT_DECIMAL))) {
