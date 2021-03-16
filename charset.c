@@ -81,13 +81,13 @@ void init_charset(charset_t cs)
       charset_array[D_HEX_E] = 'e';
       charset_array[D_HEX_F] = 'f';
       charset_array[D_U] = 'u';
-      charset_array[D_T] = 't';
+      charset_array[D_t] = 't';
       charset_array[D_L] = 'l';
       charset_array[D_H] = 'H';
       charset_array[D_h] = 'h';
-      charset_array[D_R] = 'r';
+      charset_array[D_r] = 'r';
       charset_array[D_P] = 'p';
-      charset_array[D_N] = 'n';
+      charset_array[D_n] = 'n';
       break;
     case CS_DIGITS:
       charset_array[D_ZERO] = '0';
