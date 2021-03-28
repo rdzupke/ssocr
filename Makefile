@@ -57,4 +57,7 @@ clean:
 distclean: clean
 	$(RM) *.deb *.bz2
 
-.PHONY: clean tar ssocr-dir install
+test: all
+	sh test_images/test.sh
+
+.PHONY: clean tar ssocr-dir install test
