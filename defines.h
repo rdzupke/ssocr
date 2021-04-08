@@ -88,6 +88,10 @@
 #define D_r (D_ZERO & ~(VERT_RIGHT_DOWN | HORIZ_DOWN))
 #define D_P (D_HEX_F | VERT_RIGHT_UP)
 #define D_n (D_ZERO & ~HORIZ_DOWN)
+/* Special characters */
+#define D_Wl (VERT_LEFT_UP | HORIZ_MID | VERT_RIGHT_DOWN)
+#define D_Wr (VERT_RIGHT_UP | HORIZ_MID | VERT_LEFT_DOWN)
+/* Unkonwn characters */
 #define D_UNKNOWN 0
 #define CHAR_UNKNOWN '?'
 
@@ -103,7 +107,7 @@
 #define ONE_RATIO 3
 
 /* a minus sign is recognized by a width/height ratio > MINUS_RATIO (as ints) */
-#define MINUS_RATIO 2
+#define MINUS_RATIO 1
 
 /* to find segment need # of pixels */
 #define NEED_PIXELS 1

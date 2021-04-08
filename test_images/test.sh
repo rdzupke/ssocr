@@ -53,4 +53,4 @@ echo "--\n"
 echo "========================="
 ./ssocr crop 1808 1480 450 310 -t 25 -D -S -a --background=black --foreground=white -d -1 $(find .  -name dyson-hc-le-wide.png)
 echo "Expected:"
-echo "??\n"
+echo "WW\n"
